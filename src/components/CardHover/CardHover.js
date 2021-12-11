@@ -9,25 +9,29 @@ export default function CardHover() {
         <Content>
           <Name>Nathan Drake</Name>
           <Description>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua.
+            A renowned man of adventure – and mystery – Nathan Drake is a
+            roguish explorer who’s perpetually lured by the irresistible promise
+            of adventure, fortune and glory.
           </Description>
-          <Link href="#">Read More</Link>
+          <Link href="http://www.unchartedthegame.com/" target="_blank">
+            Read More
+          </Link>
         </Content>
-        <Image src={nathan} alt="Nathan Drake" />
+        <Image src={nathan} alt="Nathan Drake" width="592" height="704" />
       </Card>
       <Card>
         <Content>
           <Name>Sam Drake</Name>
           <Description>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua.
+            Previously presumed dead, Sam Drake, Nathan's older brother, is a
+            mysterious, hardened ex-con whose incarceration and isolation has
+            given him a new mission in life: to seek adventure tirelessly.
           </Description>
-          <Link href="#">Read More</Link>
+          <Link href="http://www.unchartedthegame.com/" target="_blank">
+            Read More
+          </Link>
         </Content>
-        <Image src={sam} alt="Sam Drake" />
+        <Image src={sam} alt="Sam Drake" width="592" height="704" />
       </Card>
     </Container>
   );
@@ -55,6 +59,7 @@ const Image = styled.img`
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+  width: auto;
   height: 400px;
   transition: 0.5s;
 `;

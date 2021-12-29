@@ -1,11 +1,17 @@
 import CardHover from "../CardHover/CardHover";
+import styled from "styled-components/macro";
 
-function App() {
+export default function App() {
   return (
-    <div>
+    <Wrapper>
       <CardHover />
-    </div>
+    </Wrapper>
   );
 }
 
-export default App;
+const Wrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+`;

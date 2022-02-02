@@ -84,6 +84,16 @@ const Card = styled.div`
     opacity: 1;
     visibility: visible;
   }
+
+  @media (max-width: 991px) {
+    width: auto;
+    max-width: 600px;
+    align-items: flex-start;
+
+    &:hover {
+      height: 600px;
+    }
+  }
 `;
 
 const Name = styled.h2`
